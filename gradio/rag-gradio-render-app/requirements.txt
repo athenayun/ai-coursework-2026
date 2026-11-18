@@ -1,0 +1,8 @@
+gradio>=5.20,<7
+groq>=0.20,<1
+chromadb>=0.6,<2
+sentence-transformers>=3.4,<6
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+pypdf>=5,<7
+python-docx>=1.1,<2

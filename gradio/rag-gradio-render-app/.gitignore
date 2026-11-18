@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+chroma_db/
+*.pdf
+*.docx
+*.csv
+.ipynb_checkpoints/
+.DS_Store
