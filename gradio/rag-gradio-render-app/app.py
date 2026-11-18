@@ -77,6 +77,7 @@ with gr.Blocks(title='Multi-Strategy RAG — Render Free') as demo:
             gr.Markdown('**Privacy:** API keys and document content are held in server memory for a temporary session. Do not upload confidential files to an unauthenticated public demo. Document embeddings are generated locally; Groq receives retrieved excerpts for answering.')
         with gr.Column(scale=2):
             chat=gr.Chatbot(type='messages',label='Document Q&A',height=440)
+            
             question=gr.Textbox(label='Question')
             send=gr.Button('Ask',variant='primary')
             with gr.Accordion('Retrieved evidence',open=False):evidence=gr.Textbox(lines=8,interactive=False)
