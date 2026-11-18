@@ -1,11 +1,10 @@
 services:
   - type: web
-    name: multi-strategy-rag
+    name: rag-gradio-render-free
     runtime: docker
-    plan: starter
-    healthCheckPath: /
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeployTrigger: commit
     envVars:
       - key: PYTHONUNBUFFERED
         value: '1'
-      - key: HF_HOME
-        value: /app/.cache/huggingface

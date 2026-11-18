@@ -1,7 +1,7 @@
 .git
 .venv
 __pycache__
+*.pyc
 *.pdf
 *.docx
 *.csv
-.ipynb_checkpoints

@@ -1,10 +1,7 @@
-__pycache__/
-*.py[cod]
 .env
+__pycache__/
+*.pyc
 .venv/
-chroma_db/
 *.pdf
 *.docx
 *.csv
-.ipynb_checkpoints/
-.DS_Store
