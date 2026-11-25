@@ -1,89 +1,39 @@
-# AI & Python Coursework
+# AI Coursework 2026
 
-A collection of Python, Machine Learning, and AI coursework projects, covering data analysis, web scraping, GUI development, and practical application development.
+A collection of hands-on Python coursework and applied AI projects covering computer vision, data applications, desktop interfaces, retrieval-augmented generation (RAG), and external API integrations.
 
-This repository serves as an organized workspace for hands-on exercises, technical experiments, and small applications developed throughout my learning journey.
+## Project categories
 
-## Repository Structure
+| Category | Focus |
+| --- | --- |
+| [Computer vision](computer-vision/) | Image processing and object detection |
+| [Gradio](gradio/) | Interactive web applications and deployment |
+| [Streamlit](streamlit/) | Data exploration and dashboards |
+| [Tkinter](tkinter/) | Standalone desktop applications and web scraping |
+| [RAG, API & messaging integrations](rag-api-messaging-integrations/) | Document Q&A, structured reporting and multi-channel delivery |
 
-```text
-ai-coursework-2026/
-├── streamlit/
-│   ├── pchome-price-analyzer/
-│   └── .../
-│
-├── tkinter/
-│   ├── chickpt_taipei_job_scraper/
-│   ├── mops_tkinter/
-│   └── remoteok_customtkinter/
-│
-├── .gitignore
-└── README.md
-```
-
-Additional categories will be added as coursework progresses.
-
-## Projects
-
-### Streamlit Applications
-
-Interactive web applications developed using Python and Streamlit.
+## Featured projects
 
 | Project | Description |
-|---|---|
-| [PChome Price Analyzer](streamlit/pchome-price-analyzer/) | A Streamlit application for exploring and analyzing product pricing data from PChome. |
+| --- | --- |
+| [RAG Reporting Desktop](rag-api-messaging-integrations/rag-reporting-desktop/) | Document Q&A with local ONNX embeddings, eight retrieval strategies, Groq and LINE/Telegram/email delivery |
+| [Google Sheets Reporting Desktop](rag-api-messaging-integrations/gsheet-reporting-desktop/) | Spreadsheet queries, table previews, file exports and multi-channel reporting |
+| [ESG Render Deployment](gradio/esg-render-deployment/) | ESG data exploration and web deployment |
+| [E-commerce Price Comparison](streamlit/ecommerce-price-comparison/) | Interactive product price comparison |
+| [Tainan Parking Dashboard](streamlit/tainan_parking_dashboard/) | Parking data visualization |
 
-Other Streamlit applications will be documented as they are added.
+## Getting started
 
-### Tkinter Desktop Applications
-
-Python desktop applications exploring GUI development, data retrieval, and web scraping.
-
-| Project | Description |
-|---|---|
-| [Chickpt Taipei Job Scraper](tkinter/chickpt_taipei_job_scraper/) | A Tkinter-based application for working with Taipei job-listing data from Chickpt. |
-| [MOPS Tkinter](tkinter/mops_tkinter/) | A Python GUI application developed as part of Tkinter coursework. |
-| [RemoteOK CustomTkinter](tkinter/remoteok_customtkinter/) | A CustomTkinter application exploring remote job-listing data retrieval. |
-
-## Technologies
-
-**Programming:** Python
-
-**GUI & Web Applications:** Tkinter, CustomTkinter, Streamlit
-
-**Data Processing:** Pandas, NumPy
-
-**Other Topics:** Web Scraping, Data Analysis, Application Development
-
-Additional tools and libraries are documented within individual project directories.
-
-## Getting Started
-
-Each project is maintained in its own directory with its source code and dependencies.
-
-To run an application locally:
-
-1. Navigate to the project directory.
-2. Create and activate a Python virtual environment (recommended).
-3. Install the dependencies from its `requirements.txt`, if provided.
-4. Follow the project-specific README or run its main application file.
-
-For example:
+Each application is independent. Follow its own README and install its dependencies in a dedicated Python environment. For projects providing a requirements file:
 
 ```bash
-cd tkinter/remoteok_customtkinter
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -r requirements.txt
-python app.py
 ```
 
-Dependencies and Python version requirements may vary between projects.
+Run the entry point specified in the project documentation. Some applications require API credentials or network access.
 
-## Notes
+## Security and scope
 
-- Projects are developed primarily for educational and experimental purposes.
-- Some applications interact with external websites or data sources and may require updates when those services change.
-- This repository is updated as new exercises and projects are completed.
-
----
-
-**Maintained by [Athie Lee](https://github.com/athenayun)**
+Never commit API keys, access tokens, private documents or virtual environments. Review data before sending it to external providers. These are educational implementations and prototypes; live API delivery and deployment behavior should be verified before operational use.
